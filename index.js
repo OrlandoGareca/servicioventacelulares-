@@ -19,8 +19,11 @@ app.get('/api/product' ,(req,res) => {
 
     res.send(200, {products })
 
+
    })
+
 })
+
 
 app.get('/api/product/:productId' , (req,res) => {
     let productId = req.params.productId
@@ -31,6 +34,9 @@ app.get('/api/product/:productId' , (req,res) => {
         res.status(200).send({product: product})
     })
 })
+
+
+
 
 app.post('/api/product' , (req, res) => {
   console.log('POST /api/product')
