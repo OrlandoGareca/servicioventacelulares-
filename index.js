@@ -29,7 +29,7 @@ app.get('/api/product/:productId' , (req,res) => {
     })
 })
 
-
+//CRUD
 
 
 app.post('/api/product' , (req, res) => {
