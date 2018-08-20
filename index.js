@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const Product = require('./models/product')
 
 const app = express()
-const port = process.env.PORT || 7777
+const port = process.env.PORT || 3000
 
 app.use(bodyParser.urlencoded({ extended: false}))
 app.use(bodyParser.json())
@@ -87,3 +87,7 @@ mongoose.connect("mongodb://localhost:27017/ventacelulares" ,{ useNewUrlParser: 
       console.log(`API REST corriendo en http://localhost:${port}`)
     })
   })
+
+  //"mongoose": "3.0"
+  //"mongoose": "^4.10.8"
+  
